@@ -64,12 +64,131 @@ body{
 }
 
 /* Section 1 */
+.section1-home{
+    display: flex;
+    flex-direction: column;
+    background-color: #B0C4DE;
+    font-size: 1.2rem;
+}
 
-/* text-decoration: none; */
+.section1-home h1{
+    font-size: 4.5rem;
+}
 
+.section1-home a{
+    text-decoration: none;
+    color: black;
+    padding: 0.5% 1%;
+    border: 1px solid black;
+    background-color: white;
+    font-weight: bold;
+}
+
+.section1-home a:hover{
+    background-color: black;
+    color: white;
+}
+
+.section1-home div{
+    padding: 1% 0.5%;
+}
+
+.section1-home nav{
+    padding: 1%;
+    display: flex;
+}
 
 /* Section 2 */
+.section2-home{
+    display: flex;
+    align-items: center;
+}
+
+/* Left Side Section 2 */
+.left-section2-home{
+    width: 50%;
+    display:flex;
+}
+
+.left-section2-home img{
+    margin: 0.5% 0% 0.5% 0.5%;
+    
+}
+
+/* Right Side Section 2 */
+.right-section2-home{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.right-section2-home h2{
+    font-size: 3rem;
+    
+}
+
+.right-section2-home a{
+    text-decoration: none;
+    padding: 0.5% 1.5%;
+    border: 1px solid black;
+    color: black;
+    width: 8%;
+}
+
+.right-section2-home a:hover{
+    background-color: black;
+    color: white;
+}
+
+.right-section2-home p{
+    font-size: 2rem;
+}
+
 
 /* Section 3 */
+.section3-home{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.projectExample{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /* Section 4 */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #B0C4DE;
+}
+
+footer h2{
+    width: 20%;
+    text-align: center;
+    font-size: 3rem;
+    margin: 2% 0 0 0;
+}
+
+footer a{
+    width: 8%;
+    text-align: center;
+    color: black;
+    border: 1px solid black;
+    background-color: white;
+    padding: 1% 2%;
+    margin: 0.5% 0 2% 0;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+footer a:hover{
+    background-color: black;
+    color: white;
+}
