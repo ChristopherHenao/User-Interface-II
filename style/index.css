@@ -59,10 +59,6 @@ body{
     max-width: 100%;
 }
 
-/* *{
-    border: 1px solid grey;
-} */
-
 /* Section 1 */
 .section1-home{
     display: flex;
@@ -103,7 +99,6 @@ body{
 .section2-home{
     display: flex;
     align-items: center;
-
 }
 
 /* Left Side Section 2 */
@@ -115,10 +110,7 @@ body{
 
 .left-section2-home img{
     margin: 0.5% auto 0.5% auto;
-    width: 65%;
-    
-
-    
+    width: 65%;    
 }
 
 /* Right Side Section 2 */
@@ -128,18 +120,14 @@ body{
     flex-direction: column;
     height:35vh;
     justify-content: center;
-    /* border: 1px solid grey; */
 }
 
 .right-section2-home div{
-    /* border: 1px solid grey; */
     max-width: 100%;
 }
 
 .right-section2-home h2{
     font-size: 5rem;
-    /* border: 1px solid grey; */
-    
 }
 
 .right-section2-home a{
@@ -224,10 +212,83 @@ footer a:hover{
 /*Responsive Styles*/
 /* Tablet */
 @media(max-width:800px){
+    /* Section 1 */
     .section1-home{
+        flex-direction: column;
+        padding-bottom: 2%;
         width: 100%;
-        font-size: 
     }
+
+    .section1-home nav{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 98%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .section1-home nav a{
+        width: 25%;
+        font-size: 2rem;
+        margin: 0 auto;
+        padding: 1%;
+    }
+
+    .section1-home h1{
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    /* Section 2 */
+    /* Left Section */
+    .left-section2-home img{
+        width: 80%;
+    }
+
+    /* Right Section */
+
+    .right-section2-home div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right-section2-home h2{
+        font-size: 2.5rem;
+    }
+
+    .right-section2-home a{
+        width: 35%;
+        font-size: 2rem;
+        margin: 5% 0;
+    }
+
+    .right-section2-home p{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    /* Section 3 */
+
+    .projectExample p{
+        font-size: 2rem;
+    }
+
+    /* Section 4 */
+    footer h2{
+        width: 25%;
+        font-size: 2.5rem;
+        margin: 3% auto 0 auto;
+    }
+    
+    footer a{
+        font-size: 2rem;
+        width: 20%;
+        margin: 3% auto;
+    }
+        
 }
 
 /* Phone */
@@ -304,18 +365,12 @@ footer a:hover{
         height: 35vh;
         align-items: center;
         justify-content: center;
-        /* border: 1px solid black; */
-    }
-
-    .projectExample div{
-        /* border: 1px solid blue; */
     }
 
     .projectExample div p{
         line-height: 1.5;
         margin-bottom: 30%;
         font-size: 2.1rem;
-        
     }
 
     /* Section 4 */
@@ -330,11 +385,5 @@ footer a:hover{
         width: 25%;
         margin: 0 auto 4% auto;
     }
-
-
-
-
-
-
 
 }
