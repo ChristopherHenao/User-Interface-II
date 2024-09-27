@@ -1,1 +1,389 @@
-/* Add CSS styling here */
+/* CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	/* border: 0; */
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0; 
+}
+
+/* General Stylings */
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    max-width: 100%;
+}
+
+/* Section 1 */
+.section1-home{
+    display: flex;
+    flex-direction: column;
+    background-color: #B0C4DE;
+}
+
+.section1-home h1{
+    font-size: 6rem;
+    margin: 0.5% 0 0 0;
+}
+
+.section1-home a{
+    text-decoration: none;
+    color: black;
+    padding: 0.5% 1% 0.5% 1%;
+    border: 1px solid black;
+    background-color: white;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.section1-home a:hover{
+    background-color: black;
+    color: white;
+}
+
+.section1-home div{
+    padding: 1% 0.5%;
+}
+
+.section1-home nav{
+    padding: 1% 0 1% 1%;
+    display: flex;
+}
+
+/* Section 2 */
+.section2-home{
+    display: flex;
+    align-items: center;
+}
+
+/* Left Side Section 2 */
+.left-section2-home{
+    width: 50%;
+    display:flex;
+    margin: 1% 0 0 0;
+}
+
+.left-section2-home img{
+    margin: 0.5% auto 0.5% auto;
+    width: 65%;    
+}
+
+/* Right Side Section 2 */
+.right-section2-home{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height:35vh;
+    justify-content: center;
+}
+
+.right-section2-home div{
+    max-width: 100%;
+}
+
+.right-section2-home h2{
+    font-size: 5rem;
+}
+
+.right-section2-home a{
+    text-decoration: none;
+    padding: 0.5% 1.5%;
+    border: 1px solid black;
+    color: black;
+    width: 8%;
+    text-align: center;
+    margin: 1.5% 0 2% 0;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.right-section2-home a:hover{
+    background-color: black;
+    color: white;
+}
+
+.right-section2-home p{
+    font-size: 5rem;
+    /* border: 1px solid grey; */
+}
+
+
+/* Section 3 */
+.section3-home{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.projectExample{
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1% 0 1% 0;
+}
+
+.projectExample img{
+    width: 100%;
+}
+
+.projectExample p{
+    font-size: 3rem;
+}
+
+/* Section 4 */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #B0C4DE;
+    
+}
+
+footer h2{
+    width: 20%;
+    text-align: center;
+    font-size: 3rem;
+    margin: 2% auto 0 auto;
+}
+
+footer a{
+    width: 8%;
+    text-align: center;
+    color: black;
+    border: 1px solid black;
+    background-color: white;
+    padding: 1% 1.7%;
+    margin: 0.5% auto 2% auto;
+    text-decoration: none;
+    font-size: 3rem;
+}
+
+footer a:hover{
+    background-color: black;
+    color: white;
+}
+
+/*Responsive Styles*/
+/* Tablet */
+@media(max-width:800px){
+    /* Section 1 */
+    .section1-home{
+        flex-direction: column;
+        padding-bottom: 2%;
+        width: 100%;
+    }
+
+    .section1-home nav{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 98%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .section1-home nav a{
+        width: 25%;
+        font-size: 2rem;
+        margin: 0 auto;
+        padding: 1%;
+    }
+
+    .section1-home h1{
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    /* Section 2 */
+    /* Left Section */
+    .left-section2-home img{
+        width: 80%;
+    }
+
+    /* Right Section */
+
+    .right-section2-home div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right-section2-home h2{
+        font-size: 2.5rem;
+    }
+
+    .right-section2-home a{
+        width: 35%;
+        font-size: 2rem;
+        margin: 5% 0;
+    }
+
+    .right-section2-home p{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    /* Section 3 */
+
+    .projectExample p{
+        font-size: 2rem;
+    }
+
+    /* Section 4 */
+    footer h2{
+        width: 25%;
+        font-size: 2.5rem;
+        margin: 3% auto 0 auto;
+    }
+    
+    footer a{
+        font-size: 2rem;
+        width: 20%;
+        margin: 3% auto;
+    }
+        
+}
+
+/* Phone */
+@media(max-width: 500px){
+    /* Section 1 */
+    .section1-home{
+        flex-direction: column;
+        padding-bottom: 3%;
+    }
+
+    .section1-home nav{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section1-home nav a{
+        width: 25%;
+        font-size: 2.5rem;
+    }
+
+    .section1-home h1{
+        text-align: center;
+        font-size: 4rem;
+    }
+        
+    /* Section 2 */
+    .section2-home{
+        flex-direction: column;
+    }
+
+    /* Left Section */
+    .left-section2-home{
+        width: 80%;
+        padding-top: 3%;
+    }
+
+    .left-section2-home img{
+        width: 100%;
+    }
+
+    /* Right Section */
+    .right-section2-home{
+        width: 90%;
+    }
+
+    .right-section2-home div{
+        text-align: center;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .right-section2-home h2{
+        font-size: 3.5rem;
+    }
+
+    .right-section2-home a{
+        font-size: 2.5rem;
+        width: 30%;
+    }
+
+    .right-section2-home p{
+        font-size: 2rem;
+        width: 70%;
+    }
+
+    /* Section 3 */
+    .projectExample{
+        width: 42%;
+        height: 35vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .projectExample div p{
+        line-height: 1.5;
+        margin-bottom: 30%;
+        font-size: 2.1rem;
+    }
+
+    /* Section 4 */
+    footer h2{
+        font-size: 2rem;
+        width: 40%;
+        margin: 4% auto 2% auto;
+    }
+
+    footer a{
+        font-size: 2rem;
+        width: 25%;
+        margin: 0 auto 4% auto;
+    }
+
+}
